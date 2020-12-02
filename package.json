@@ -1,0 +1,76 @@
+{
+  "name": "daskeyboard-applet--youtube-livestream",
+  "displayName": "Youtube Livestream Status",
+  "version": "1.0",
+  "description": "Displays active youtube livestreams.",
+  "longDescription": "Monitor your favourite youtuber for whether or not they're currently livestreaming!",
+  "officialProductName": "Youtube Livestream Status",
+  "appUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus",
+  "publisherName": "Legitcorp",
+  "publisher": "Legitcorp",
+  "isSingleton": false,
+  "videoUrl": "",
+  "icon": "assets/icon.svg",
+  "image": "assets/image.png",
+  "authorName": "Baa",
+  "authorUrl": "https://legitcorp.com",
+  "issuesUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus/-/issues",
+  "homePageUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus",
+  "developerRepoUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus",
+  "licenseUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus/LICENSE",
+  "changelogUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus/CHANGELOG.md",
+  "license": "GNU AGPL3.0",
+  "readMeUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus/README.md",
+  "readMeEndUserUrl": "https://gitlab.legitcorp.com/daskeyboard/youtubelivestreamstatus/README_ENDUSER.md",
+  "dependencies": {
+    "daskeyboard-applet": "^2.11.5",
+    "googleapis": "^65.0.0"
+  },
+  "engines": {
+    "das-keyboard-q": "3.0.0"
+  },
+  "applet": {
+    "defaults": {}
+  },
+  "main": "index.js",
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1
+    },
+    "authorization": {
+        "type": "apiKey",
+        "hint": "Create a Google API Key and enter it here.",
+        "supportUrl": "https://console.developers.google.com/apis/credentials?"
+      },
+    "questions": [
+      {
+        "key": "channelID",
+        "label": "Enter the ID of the channel you want to monitor.",
+        "help": "You can get this from the channel URL after /channel/",
+        "value": "UCMwGHR0BTZuLsmjY_NT5Pwg",
+        "required": true,
+        "order": 1,
+        "controlType": "textbox"
+      },
+      {
+        "key": "onlineColour",
+        "label": "Enter the colour that will be used when a streamer is Online.",
+        "help": "I suggest green",
+        "value": "#08F26E",
+        "required": true,
+        "order": 2,
+        "controlType": "color"
+      },
+      {
+        "key": "offlineColour",
+        "label": "Enter the colour that will be used when a streamer is Offline.",
+        "help": "I suggest red",
+        "value": "#FF0000",
+        "required": true,
+        "order": 3,
+        "controlType": "color"
+      }
+    ]
+  }
+}
