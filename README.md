@@ -1,6 +1,6 @@
 # Q Applet: Youtube Livestream Status
 
-![logo](assets/icon.png "logo")
+![logo](assets/icon.png  =200x "logo")
 
 Displays the status of your chosen youtuber as a colour on your keyboard.
 This program was built to monitor vtubers and I have no shame in admitting that.
