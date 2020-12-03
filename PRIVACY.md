@@ -1,7 +1,6 @@
-
 ## Privacy Policy of Youtube Livestream Status Q Das Keyboard Applet
 
-Legitcorp operates the Website Name Legitcorp.com, which provides various opensource software projects and related services.
+Legitcorp operates the Youtube Livestream Status 'applet' for  Das Keyboard software.
 
 This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our services.
 
